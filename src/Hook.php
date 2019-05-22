@@ -1,5 +1,5 @@
 <?php
-namespace EighteenPlus\AgeGateHook;
+namespace EighteenPlus\AgeGateCI;
 
 use EighteenPlus\AgeGate\AgeGate;
 

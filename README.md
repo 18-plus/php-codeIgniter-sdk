@@ -11,13 +11,13 @@ Create file hooks.php in application/config
 Add
 ```php
 $hook['post_controller_constructor'][] = array(
-    'class'    => 'EighteenPlus\\AgeGateHook\\Hook',
+    'class'    => 'EighteenPlus\\AgeGateCI\\Hook',
     'function' => 'ageGateRun',
     'filename' => 'Hook.php',
     'filepath' => '<vendor_path>/agegateci/src/',
 );
 $hook['pre_system'][] = array(
-    'class'    => 'EighteenPlus\\AgeGateHook\\CsrfHook',
+    'class'    => 'EighteenPlus\\AgeGateCI\\CsrfHook',
     'function' => 'csrfDisable',
     'filename' => 'CsrfHook.php',
     'filepath' => '<vendor_path>/agegateci/src/'

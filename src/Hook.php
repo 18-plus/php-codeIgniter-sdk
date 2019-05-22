@@ -5,7 +5,7 @@ use EighteenPlus\AgeGate\AgeGate;
 
 class Hook 
 {
-    public function run()
+    public function ageGateRun()
     {
         $ci =& get_instance();
         $ci->load->helper('url');

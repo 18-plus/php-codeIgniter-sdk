@@ -6,8 +6,8 @@ class CsrfHook
     public function csrfDisable() 
     {
         if (isset($_REQUEST['agecheck'])) {
-	        $CFG =& load_class('Config', 'core');
-	        $CFG->set_item('csrf_protection', false);
+	        $cfg =& load_class('Config', 'core');
+	        $cfg->set_item('csrf_protection', false);
         }
     }
 }

@@ -14,13 +14,13 @@ $hook['post_controller_constructor'][] = array(
     'class'    => 'EighteenPlus\\AgeGateCI\\Hook',
     'function' => 'ageGateRun',
     'filename' => 'Hook.php',
-    'filepath' => '<vendor_path>/agegateci/src/',
+    'filepath' => '<vendor_path>/agegateci/src/', // path relative to APPPATH
 );
 $hook['pre_system'][] = array(
     'class'    => 'EighteenPlus\\AgeGateCI\\CsrfHook',
     'function' => 'csrfDisable',
     'filename' => 'CsrfHook.php',
-    'filepath' => '<vendor_path>/agegateci/src/'
+    'filepath' => '<vendor_path>/agegateci/src/', // path relative to APPPATH
 );
 ```
 

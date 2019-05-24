@@ -11,7 +11,9 @@ class Hook
         $ci->load->helper('url');
         
         $gate = new AgeGate(base_url());
-        $gate->setTitle($ci->config->item('AGEGATE_TITLE'));
+        $gate->setTitle($ci->config->item('agegate_title'));
+        $gate->setTestIp($ci->config->item('agegate_test_ip'));
+        $gate->setStartFrom($ci->config->item('agegate_start_from'));
         $gate->run();
     }
 }
